@@ -1,0 +1,358 @@
+---
+title: "`r emo::ji('muscle')` EGİTİMDE ÖLÇME VE DEĞERLENDİRME"
+subtitle: " <br> `r emo::ji('graph')` Dersi Tanıtma"
+author: "<br> <br> `r emo::ji('woman_teacher')` Dr. Kübra ATALAY KABASAKAL <br> Hacettepe Üniversitesi"
+date: "2021-2022 Bahar Perşembe Hafta 1 
+       13:00-14:50 <br> <br> <br> <br>`r emo::ji('e-mail')` katalay@hacettepe.edu.tr"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: ["xaringan-themer.css", "slides-style.css"]
+    nature:
+      highlightStyle: solarized-light
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>
+---
+
+```{r child = "../setup.Rmd"}
+```
+
+```{r set-theme, include=FALSE}
+library(xaringanthemer)
+style_duo_accent(
+  primary_color      = "#0F4C81", # pantone classic blue
+  secondary_color    = "#B6CADA", # pantone baby blue
+  header_font_google = google_font("Raleway"),
+  text_font_google   = google_font("Raleway", "300", "300i"),
+  code_font_google   = google_font("Source Code Pro"),
+  text_font_size     = "30px"
+)
+```
+
+```{r, include=FALSE}
+advdate <- function(obj, adv) {
+ tmon <- obj + 7*(adv-1)
+ # tfri <- obj + 4 + 7*(adv-1)
+ tmon <- format(tmon, format="%d/%m")
+ # tfri <- format(tfri, format="%d/%m")
+ zadv <- sprintf("%02d", adv)
+ tmp <- paste("Hafta ",zadv,sep='',", ", tmon)
+ return(tmp)
+}
+
+library(lubridate)
+options(scipen=999)
+library(tidyverse)
+library(stevemisc)
+mon <- ymd(20220210)
+```
+
+---
+# Eğitmen .huge[`r emo::ji("woman_teacher")`]
+
+.huge[`r emo::ji("link")`] [Doç. Dr. Kübra Atalay Kabasakal](https://avesis.hacettepe.edu.tr/katalay)
+
+.huge[`r emo::ji("link")`] **Sinif:** Zoom Perşembe 13:00-14:50
+
+**Ofis saatleri:** Cuma 10:00-12:00    
+ 
+**Ofis:** "Eğitim Bilimleri Enstitüsü"                              
+---
+# EGT204 IZLENCE.huge[`r emo::ji("stats")`]
+
+.hand[İçerik...]
+
+- Dersin Amacı
+- Ders Hedefleri
+- Ders İşlenişi
+- Notlandırma
+- Derse Katılım
+- İletişim
+- Okuma Listesi
+
+---
+# Ders Amacı
+
+- Eğitimde ölçme ve değerlendirmenin önemini kavrama; ölçme ve değerlendirmeyle ilgili temel kavramlar ve ölçme araçlarının psikometrik (geçerlik,güvenirlik, kullanışlılık) özellikleri bilgisine sahip olma ve başarı testleri geliştirme ve uygulamada yeterli olma.
+
+---
+# Ders Hedefleri
+
+Bu dersi başarıyla tamamlayan öğretmen adayları ders bitiminde aşağıdaki hedeflenen kazanımları edinmiş olur:
+
+**1.** Ölçme ve değerlendirme ile ilgili temel kavramları ve olguları bilir.
+
+**1.** Ölçme ve değerlendirme dersi ile ilgili kavramları kendi derslerinde kullanır.
+
+**1.** Hazırlanan bir ölçme aracında olması gereken temel özellikleri sıralar.
+
+**1.** Psikometrinin güvenirlik ve geçerlik gibi tekniklerinin teorik temellerini anlar.
+
+**1.** Güvenirlik ve geçerlilik tekniklerini gerçek veri setlerinde uygulayabilir.
+
+**1.** Eğitimde ölçme ve değerlendirme yapmanın önemini açıklar.
+
+**1.** Eğitimde kullanılan sonuç ve süreç odaklı ölçme araçlarının özelliklerini bilir ve hazırlar.
+
+**1.** Test istatistiklerini kullanarak test sonucunda oluşan dağılımları yorumlar.
+
+**1.** Uygulanan ölçme araçlarından alınan öğrenci çıktısını değerlendirir ve öğrenciye not verir.
+
+
+---
+# Ders İşlenişi
+
+- Dersler "Ders Planı" başlığı altındaki sıralamaya göre işlenecektir.
+
+- Belirtilen başlık altında her haftanın ilgili ders dokumanına bağlantı moodleda yer almaktadır.
+
+---
+# Notlandırma
+
+-   **25% Ara Sınav**  ders saatinde gerçekleştirilecektir.
+    
+-   **25% Derse Katılım ve Ödevler** derslere katılımınız zoom kayıtlarından alınabilmektedir. Ayrıca derste online olan ancak iletişim kurulamayan kişiler derste yok sayılacaktır.
+    
+-    Bu derste sizden **5** ödev yapmanız beklenmektedir. Ödev başlıkları "Ders Planı" icinde ilgili haftada yer almaktadır. Ödevler ve **ders içinde uygulanacak mini sınavlar** genel başarı puanının **%25'ını** oluşturmaktadır. Ödev başlıklarında ödev ağırlıklarını görebilirsiniz. Ödevlerinizi moodle ilgili haftada bulacaksınız.
+
+-   **50% Genel Sınav** tarihi ve Uygulanma şekli daha sonra duyurulacaktır.
+
+
+---
+# Derse Katılım
+
+- Hacettepe Üniversitesi Ön Lisans, Lisans Eğitim-Öğretim Yönetmeliğinde geçtiği gibi derslere devam zorunludur. 
+
+- Mazeretler de dahil olmak üzere kuramsal (teorik) saatlerin **%30'undan** fazlasına katılmayan öğrenci o dersin genel ve bütünleme sınavına alınmaz.
+
+---
+## E-mail ile İletişim
+
+- Bu dökumanda yazmayan her türlü konuda bana `r emo::ji('link')` [katalay@hacettepe.edu.tr] ile ulaşabilirsiniz.
+
+- Tüm sınıfı ilgilendiren konular i
+çin ise ilk derste aranızdan seçtiğimiz gönüllü öğrenci ile iletişim kurulacaktır.
+
+
+---
+## Okuma Listesi
+
+- Atılgan, Hakan. (2007). Eğitimde ölçme ve değerlendirme. Ankara: Anı Yayıncılık.
+
+- Başol, Gülşah. (2007). Eğitimde ölçme ve değerlendirme. İstanbul: Lisans Yayıncılık.
+
+- Baykul, Yaşar & Turgut, M. Fuat. (2010). Eğitimde ölçme ve değerlendirme. Ankara: Pegem Akademi Yayıncılık.
+
+- Baykul, Yaşar. (2010). Eğitim ve psikolojide ölçme. Ankara: Pegem Akademi Yayıncılık.
+
+- Çetin, Bayram (Ed.). (2020). Eğitimde ölçme ve değerlendirme. Ankara: Anı Yayıncılık.
+
+
+---
+## Okuma Listesi
+- Demirtaşlı, Nükhet(Ed.). (2017). Eğitimde ölçme ve değerlendirme. Ankara: Anı Yayıncılık.
+
+- Güler, Neşe. (2011). Ölçme ve değerlendirme. Ankara: Pegem Akademi Yayıncılık.
+
+- Özçelik, Durmuş Ali. (2010). Ölçme ve değerlendirme. Ankara: Pegem Akademi Yayıncılık.
+
+- Öztürk Gübeş, N. & Özberk, H. E.(Ed.). (2018). Eğitimde ölçme ve değerlendirme. Ankara: Lisans Yayıncılık.
+
+- Tan, Şeref. (2009). Öğretimde Ölçme ve değerlendirme. Ankara: Pegem Akademi Yayıncılık.
+
+- Tavşancıl, Ezel (Ed.) (2013). Psikolojik Test ve Değerleme. Ankara. Nobel Yayın Dağıtım Tic.Ltd. Şti.
+
+- Tekin, Halil. (2009). Eğitimde Ölçme ve değerlendirme. Ankara: Yargı Yayınevi
+
+- Turgut, Fuat. (2011). Eğitimde ölçme ve değerlendirme. Ankara: Pegem Akademi Yayıncılık.
+---
+
+## Ders Planı
+### `r advdate(mon, 1)`: Dersin ve Kaynakların Tanınımı
+
+- Tanışma
+
+- Dersin amacı, içeriği ve kaynaklarının tanıtılması
+
+```{r echo=FALSE, fig.align='center',out.width="50%"}
+knitr::include_graphics("img/hosgeldiniz.jpg")
+```
+
+`r emo::ji('link')` [Lutfen anketi doldurunuz](https://forms.gle/HvD2eeSmiJd4Qhhp8)<br>
+
+---
+## ÖDEV I
+Ödevinizi moodle üzerinde bulabilirsiniz.
+
+1. Derse gelmeden önce Hafta_2 de yer alan iki youtube videosunu izleyiniz.
+
+2. turcademy.com adresinden de erişebileceğiniz aşağıdaki kitabın ilk iki bölümünü okuyunuz.
+
+Fatih Kezer (2020). Yeni Başlayanlar İçin Bilgisayar Ortamında Bireye Uyarlanmış Test Yöntemi. Pegem Akademi
+- **Bölüm 1:** Eğitimde Ölçme ve Değerlendirmenin Yeri
+- **Bölüm 2:** Psikolojik Testlerin tarihçesi
+Ders başında bir uygulama yapılacaktır.
+
+---
+## `r advdate(mon, 2)`: 
+Ölçmede Temel Kavramlar
+Eğitimde ölçme ve değerlendirmenin yeri ve önemi
+
+
+
+---
+## `r advdate(mon, 3)`: Ölçme ve değerlendirmede temel kavramlar
+
+Ders öncesi Hafta 2 konularını kapsayan uygulama yapılacaktır.
+
+Ölçmenin tanımı ve önemi
+
+Değişken türleri
+
+Ölçmenin türleri
+
+Ölçmede birim
+
+Ölçmede sıfır
+
+Ölçek ve türleri
+
+---
+## `r advdate(mon, 5)`: Değerledirme
+
+ Ders başlangıcında ilk üç hafta konularını kapsayan bir mini sınav uygulaması yapilacaktir.
+
+Değerlendirme öğeleri ve türleri
+
+Mutlak değerlendirme ve bağıl değerlendirme
+
+Alternatif değerlendirme yöntemleri
+
+---
+
+## `r advdate(mon, 5)`: Ölçmede hata ve korelasyo
+=======
+## `r advdate(mon, 5)`: Ölçmede hata ve korelasyon
+
+## `r advdate(mon, 6)`:  Ölçmede hata ve korelasyon
+
+. Ders kaydında size odev olarak bırakılan sayfalar sinifta tartısılacaktir.
+
+Ölçmede hata ve hata türleri
+
+Korelasyon
+
+---
+## `r advdate(mon, 7)`: Ara Sınav
+
+```{r echo=FALSE, fig.align='center',out.width="75%"}
+knitr::include_graphics("img/SINAV.jpg")
+```
+
+---
+## `r advdate(mon, 8)`:Ölçme araçlarının temel nitelikleri I
+
+Ders başlangıcında ölçmede hata ve güvenirlik konularini kapsayan bir mini sınav uygulaması yapilacaktir.
+
+Güvenirlik
+
+Güvenirlik hesaplanma yöntemleri
+
+---
+## `r advdate(mon, 9)`: Ölçme araçlarının temel nitelikleri II
+
+ Ders başlangıcında çeşitli ölçme durumları sizlerle paylaşılacak ve paylaşımları ölçme araçlarında aranan temel nitelikler açısından değerlendirmeniz beklenecektir.
+
+Geçerlik
+
+Geçerlik kaynakları
+
+---
+## `r advdate(mon, 10)`: Eğitimde kullanılan ölçme araçları I
+
+Ders başlangıcında farklı madde türleri sizlere paylaşılacak ve madde türlerini madde yazım kuralları açısından değerlendirmeniz beklenecektir.
+
+Yazılı yoklamalar
+
+Sözlü sınavlar
+
+Kısa yanıtlı sınavlar
+
+Eşleştirme-maddeli
+
+Doğru-Yanlış testleri
+
+---
+## `r advdate(mon, 11)`: Eğitimde kullanılan ölçme araçları II
+Ödev ve projeler
+
+Performans değerlendirme
+
+Portfolyo
+
+Rubrikler
+
+---
+## `r advdate(mon, 12)`: Madde Analizi
+
+Sizlere Madde Analizi Ödeviniz ders başlangıcında ayrıntılı olarak açıklanacak ve iki hafta sonra bu ödevi teslim etmeniz beklenecektir. Ödev ile ilgili ayrıntıları moodle üzerinden takip ediniz.
+
+Madde güçlük ve ayırtedicilik indeksleri
+
+Çeldirici Analizi
+
+Madde Değişkenliği
+
+Test geliştirme aşamaları
+---
+## `r advdate(mon, 13)`: Test İstatistikleri
+Verilerin Düzenlenmesi
+
+Merkezi Eğilim Ölçüleri
+
+Merkezi Dağılım Ölçüleri
+
+Standart Puanlar
+
+---
+## `r advdate(mon, 14)`: Not Verme ve Genel Tekrar
+
+---
+
+---
+## `r advdate(mon, 15)`: Genel Sınav
+-   Tarihi ve Uygulanma şekli daha sonra duyurulacaktır.
+
+```{r echo=FALSE, fig.align='center',out.width="75%"}
+knitr::include_graphics("img/SINAV.jpg")
+```
+
+---
+
+
+.hand-large[teşekkürler !]
+
+--
+
+<br>
+.large[`r emo::ji('happy')`]
+
+
+<!-- Hafta 3 mini sinav -->
+<!-- Hafta 4 mini sinav -->
+<!-- Hafta 4-5 mini sınav -->
+
+<!-- Ödev I problem durumu -->
+<!-- Ödev II örnekleme -->
+<!-- ODEV-III  Çevirim içi Anket Hazırlama -->
+<!-- ODEV-IV   Uygulanmış Bir Anket Analizi -->
+<!-- ODEV-V   Kaynak Yazımı -->
+
+<!-- Proje -->
+
