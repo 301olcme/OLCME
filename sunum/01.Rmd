@@ -196,46 +196,16 @@ Ders başında bir uygulama yapılacaktır.
 
 ---
 ## `r advdate(mon, 2)`: 
-
 ### Ölçmede Temel Kavramlar
 ### Eğitimde ölçme ve değerlendirmenin yeri ve önemi
-
-
-
-
----
 ## `r advdate(mon, 3)`: Değerledirme
+## `r advdate(mon, 4)`: Ölçmede hata ve korelasyon
+## `r advdate(mon, 5)`: Ölçme araçlarının temel nitelikleri I
+## `r advdate(mon, 6)`: Ölçme araçlarının temel nitelikleri II
 
-Ölçmenin tanımı ve önemi
-
-Değişken türleri
-
-Ölçmenin türleri
-
-Ölçmede birim
-
-Ölçmede sıfır
-
-Ölçek ve türleri
-
----
-## `r advdate(mon, 5)`: Değerledirme
-
- Ders başlangıcında ilk üç hafta konularını kapsayan bir mini sınav uygulaması yapilacaktir.
-
-Değerlendirme öğeleri ve türleri
-
-Mutlak değerlendirme ve bağıl değerlendirme
-
-Alternatif değerlendirme yöntemleri
 
 ---
 
-
-## `r advdate(mon, 5)`: Ölçmede hata ve korelasyon
-## `r advdate(mon, 6)`: Ölçme araçlarının temel nitelikleri I
-
----
 ## `r advdate(mon, 7)`: Ara Sınav
 
 ```{r echo=FALSE, fig.align='center',out.width="75%"}
@@ -244,74 +214,12 @@ knitr::include_graphics("img/SINAV.jpg")
 
 ---
 ## `r advdate(mon, 8)`:Ölçme araçlarının temel nitelikleri II
-
-Ders başlangıcında ölçmede hata ve güvenirlik konularini kapsayan bir mini sınav uygulaması yapilacaktir.
-
-Güvenirlik
-
-Güvenirlik hesaplanma yöntemleri
-
----
 ## `r advdate(mon, 9)`: Ölçme araçlarının temel nitelikleri III
-
- Ders başlangıcında çeşitli ölçme durumları sizlerle paylaşılacak ve paylaşımları ölçme araçlarında aranan temel nitelikler açısından değerlendirmeniz beklenecektir.
-
-Geçerlik
-
-Geçerlik kaynakları
-
----
 ## `r advdate(mon, 10)`: Eğitimde kullanılan ölçme araçları I
-
-Ders başlangıcında farklı madde türleri sizlere paylaşılacak ve madde türlerini madde yazım kuralları açısından değerlendirmeniz beklenecektir.
-
-Yazılı yoklamalar
-
-Sözlü sınavlar
-
-Kısa yanıtlı sınavlar
-
-Eşleştirme-maddeli
-
-Doğru-Yanlış testleri
-
----
 ## `r advdate(mon, 11)`: Eğitimde kullanılan ölçme araçları II
-Ödev ve projeler
-
-Performans değerlendirme
-
-Portfolyo
-
-Rubrikler
-
----
 ## `r advdate(mon, 12)`: Madde Analizi
-
-Sizlere Madde Analizi Ödeviniz ders başlangıcında ayrıntılı olarak açıklanacak ve iki hafta sonra bu ödevi teslim etmeniz beklenecektir. Ödev ile ilgili ayrıntıları moodle üzerinden takip ediniz.
-
-Madde güçlük ve ayırtedicilik indeksleri
-
-Çeldirici Analizi
-
-Madde Değişkenliği
-
-Test geliştirme aşamaları
----
 ## `r advdate(mon, 13)`: Test İstatistikleri
-Verilerin Düzenlenmesi
-
-Merkezi Eğilim Ölçüleri
-
-Merkezi Dağılım Ölçüleri
-
-Standart Puanlar
-
----
 ## `r advdate(mon, 14)`: Not Verme ve Genel Tekrar
-
----
-
 ---
 ## `r advdate(mon, 15)`: Genel Sınav
 -   Tarihi ve Uygulanma şekli daha sonra duyurulacaktır.
