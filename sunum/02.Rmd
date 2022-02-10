@@ -53,7 +53,7 @@ mon <- ymd(20220210)
 ```
 
 ---
-# Eğitim Nedir?
+# Eğitim Nedir? -
 
 -   Eğitim; "bireyin davranışında kendi yaşantısı yoluyla ve kasıtlı olarak istendik değişme meydana getirme sürecidir" (Ertürk,1975:12).
 
