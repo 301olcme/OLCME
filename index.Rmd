@@ -1,0 +1,32 @@
+---
+title: "EGT301: EĞİTİMDE ÖLÇME VE DEĞERLENDİRME"
+subtitle: "Ders Iceriği"
+date: "18/01/2022"
+output: 
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float: 
+      collapsed: false
+      smooth_scroll: false
+    theme:  default
+    highlight: null
+    css: styles.css
+---
+
+### Sunumlar
+
+1. [Tanışma Ve Ölçmeye Giriş](sunum/01.html)  
+2. [Eğitimde ölçme ve değerlendirmenin yeri ve önemi](sunum/02.html)
+3. [Ölçme ve değerlendirmede temel kavramlar](sunum/03.html) 
+4. [Değerledirme](sunum/04.html) 
+5. [Ölçmede hata ve korelasyon](sunum/05.html) 
+6. [Ölçme araçlarının temel nitelikleri I](sunum/06.html) 
+7. Vize 
+8. [Ölçme araçlarının temel nitelikleri II](sunum/08.html) 
+9. [Eğitimde kullanılan ölçme araçları I](sunum/09.html) 
+10. [Eğitimde kullanılan ölçme araçları II](sunum/10.html) 
+11. [Eğitimde kullanılan ölçme araçları III](sunum/11.html) 
+12. [Madde Analizi ve Test Geliştirme](sunum/12.html) 
+13. [Test İstatistikleri](sunum/13.html) 
+14. [Not Verme ve Genel Tekrar](sunum/14.html) 
