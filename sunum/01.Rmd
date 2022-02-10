@@ -211,9 +211,9 @@ knitr::include_graphics("img/SINAV.jpg")
 ```
 
 ---
-## `r advdate(mon, 8)`:Ölçme araçlarının temel nitelikleri II
-## `r advdate(mon, 9)`: Ölçme araçlarının temel nitelikleri III
-## `r advdate(mon, 10)`: Eğitimde kullanılan ölçme araçları I
+## `r advdate(mon, 8)`:Ölçme araçlarının temel nitelikleri III
+## `r advdate(mon, 9)`: Eğitimde kullanılan ölçme araçları I
+## `r advdate(mon, 10)`: Eğitimde kullanılan ölçme araçları II
 ## `r advdate(mon, 11)`: Eğitimde kullanılan ölçme araçları II
 ## `r advdate(mon, 12)`: Madde Analizi
 ## `r advdate(mon, 13)`: Test İstatistikleri
