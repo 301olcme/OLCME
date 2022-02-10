@@ -248,4 +248,3 @@ knitr::include_graphics("img/SINAV.jpg")
 <!-- ODEV-V   Kaynak Yazımı -->
 
 <!-- Proje -->
-
